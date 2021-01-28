@@ -9,8 +9,8 @@ h2{
 #myLittleDiv{
   box-shadow: 5px 5px 20px #8cb3b8;
   overflow:hidden;
-  width:90vw;
-  height:23vw;
+  width:100%;
+  height:auto;
   display:inline-block;
   position:relative;
   background:lightblue ;
@@ -24,8 +24,8 @@ h2{
 #mySecondDiv{
   box-shadow: 5px 5px 20px #8cb3b8;
   overflow:hidden;
-  width:90vw;
-  height:50vw;
+  width:100%;
+  height:auto;
   display:inline-block;
   position:relative;
   background:lightblue ;
@@ -36,8 +36,9 @@ h2{
 .card{
   box-shadow: 5px 5px 5px bisque;
   margin: 1vw;
-  height: 18vw;
+  height: auto;
   border-radius: 2vw;
+  position: relative;
 }
 .card-img-top{
   border-radius:2vw ;
@@ -45,8 +46,8 @@ h2{
 #myLittleAboutDiv{
   box-shadow: 5px 5px 20px #8cb3b8;
   overflow:hidden;
-  width:90vw;
-  height:35vw;
+  width:100%;
+  height:auto;
   display:inline-block;
   position:relative;
   background:lightblue ;
@@ -59,8 +60,8 @@ h2{
 #myLittleContactDiv{
   box-shadow: 5px 5px 20px #8cb3b8;
   overflow:hidden;
-  width:90vw;
-  height:35vw;
+  width:100%;
+  height:auto;
   display:inline-block;
   position:relative;
   background:lightblue ;
@@ -89,6 +90,7 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  position: relative;
 }
 
 input[type=submit]:hover {
@@ -100,3 +102,28 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 }
+
+@media (max-width: 576px) {  
+  .xs {color:red;font-weight:bold;}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width:768px) {  
+  .sm {color:red;font-weight:bold;}
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) and (max-width:992px) {  
+ .md {color:red;font-weight:bold;}
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width:1200px) { 
+ .lg {color:red;font-weight:bold;}
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    .xl {color:red;font-weight:bold;}
+}
+ 
